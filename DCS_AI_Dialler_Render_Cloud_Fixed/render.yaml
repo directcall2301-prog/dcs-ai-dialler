@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: dcs-ai-dialler-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: APP_ENV
+        value: production
+      - key: DIAL_MODE
+        value: simulation
+      - key: DATABASE_PATH
+        value: /tmp/dcs_dialler.db
+      - key: MAX_ACTIVE_AGENTS
+        value: "10"
+      - key: DCS_ADMIN_USER
+        sync: false
+      - key: DCS_ADMIN_PASSWORD
+        sync: false
