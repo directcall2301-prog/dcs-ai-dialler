@@ -1,0 +1,8 @@
+[general]
+enabled = yes
+pretty = yes
+[dcsari]
+type = user
+read_only = no
+password = CHANGE_THIS_TO_A_LONG_RANDOM_SECRET
+; Restrict network access to the DCS application server only.

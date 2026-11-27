@@ -1,0 +1,8 @@
+DCS_MODE=simulation
+DCS_SECRET_KEY=replace-with-long-random-session-secret
+DCS_ADMIN_USERNAME=admin
+DCS_ADMIN_PASSWORD=replace-with-strong-password
+DCS_DATABASE_PATH=/var/data/dcs_dialler.sqlite3
+DCS_COOKIE_SECURE=true
+ASTERISK_ARI_PASSWORD=replace-with-asterisk-ari-password
+DCS_ENCRYPTION_KEY=generate-a-fernet-key-for-encrypted-trunk-credentials

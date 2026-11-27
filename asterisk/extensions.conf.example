@@ -1,0 +1,5 @@
+[from-dcs]
+exten => _X.,1,NoOp(DCS outbound call routing)
+ same => n,Hangup()
+; Outbound calls are originated through ARI using PJSIP/number@trunkN.
+; Configure the carrier's required number format and permitted caller ID.
